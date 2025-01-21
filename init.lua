@@ -107,6 +107,8 @@ vim.opt.number = true
 -- Make column limit
 vim.api.nvim_set_option_value('colorcolumn', '79', {})
 
+-- Set Tabs
+-- vim.api.nvim_set_option_value('expandtab', , {})
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
@@ -241,13 +243,14 @@ require('lazy').setup({
   -- with the first argument being the link and the following
   -- keys can be used to configure plugin behavior/loading/etc.
   --
-  -- Use `opts = {}` to force a plugin to be loaded.
-  --
 
+  -- Use `opts = {}` to force a plugin to be loaded.
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
-  --
+  {
+    'EyzeCOLD/nvim-function-linecount',
+  },
   -- See `:help gitsigns` to understand what the configuration keys do
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -973,3 +976,5 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+require 'nvim-function-linecount'
