@@ -105,7 +105,7 @@ vim.opt.number = true
 -- vim.opt.relativenumber = true
 
 -- Make column limit
-vim.api.nvim_set_option_value('colorcolumn', '79', {})
+vim.api.nvim_set_option_value('colorcolumn', '81', {})
 
 -- Set Tabs
 -- vim.api.nvim_set_option_value('expandtab', , {})
